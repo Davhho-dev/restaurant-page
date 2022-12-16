@@ -1,36 +1,26 @@
-export default function createHome() {
-    const home = document.createElement("div");
-    home.appendChild(navBar());
-    home.appendChild(mainContent());
-    return home;
-}
-
 function navBar() {
     const navBar = document.createElement("div");
-    navBar.appendChild(leftNav());
-    navBar.appendChild(rightNav());
+    navBar.classList.add("navbar");
+    navBar.appendChild(navElement("home"));
+    navBar.appendChild(navElement("menu"));
+    navBar.appendChild(logo());
+    navBar.appendChild(navElement("about"));
+    navBar.appendChild(navElement("contact"));
     return navBar;
 }
 
-function leftNav() {
+function logo() {
     const logo = document.createElement("h1");
     logo.classList.add("logo");
-    logo.textContent = "Du Ma";
+    logo.textContent = "DU MA";
     return logo;
 }
 
-function rightNav() {
-    const rightNav = document.createElement("div");
-    rightNav.appendChild(navElements("HOME"));
-    rightNav.appendChild(navElements("MENU"));
-    rightNav.appendChild(navElements("CONTACT"));
-    return rightNav;
-}
-
-function navElements(text) {
-    const links = document.createElement("a");
-    links.textContent = text;
-    return links;
+function navElement(text) {
+    const link = document.createElement("a");
+    link.classList.add(text);
+    link.textContent = text;
+    return link;
 }
 
 function mainContent() {
@@ -56,3 +46,5 @@ function rightMain() {
     rightMain.classList.add("right-main");
     return rightMain;
 }
+
+export {navBar, mainContent};
