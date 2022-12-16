@@ -45,6 +45,7 @@ a {
 
 /* ---------- Content ----------*/
 .main {
+    margin: 0 5%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -77,4 +78,22 @@ a {
 .right-main {
     background-image: url(./homeImg.jpg);
     background-size: cover;
+}
+
+.front-logo { 
+    position: absolute;
+    left: 35%;
+    width: 15%;
+    font-family: var(--secondary-ft);
+}
+
+.top-logo {
+    font-size: 10rem;
+    font-weight: 900;
+}
+
+.bottom-logo {
+    font-size: 6.5rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.80);
 }
