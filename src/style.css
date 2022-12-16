@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+}
+
+:root {
+    --primary-clr: #FFB606;
+    --primary-ft: "Open Sans";
+    --secondary-ft: "Montserrat";
+    --big-sz: 5rem;
+    --medium-sz: 2.5rem;
+    --small-sz: 2rem;
+    --smallest-sz: 1.5rem;
+}
+
+#content {
+    height: 100%;
+}
+
+/* ---------- NAV BAR ----------*/
+.navbar {
+    margin: 20px;
+    font-family: var(--primary-ft);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 100px;
+}
+
+.logo {
+    font-size: var(--big-sz);
+}
+
+a {
+    font-family: var(--secondary-ft);
+    font-size: var(--small-sz);
+}
+
+/* ---------- Content ----------*/
+.main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left-main {
+    background-color: var(--primary-clr);
+}
+
+.greeting-container {
+    max-width: 65ch;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    margin-left: 10%;
+    padding-left: 5%;
+    border-left: 15px solid black;
+} 
+
+.greet-title {
+    font-family: var(--primary-ft);
+    font-size: var(--medium-sz);
+}
+
+.greet-content {
+    font-family: var(--secondary-ft);
+    font-size: var(--small-sz);
+    font-style: italic;
+}
+
+.right-main {
+    background-image: url(./homeImg.jpg);
+    background-size: cover;
+}
