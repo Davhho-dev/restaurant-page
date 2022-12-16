@@ -33,12 +33,40 @@ function mainContent() {
 
 function leftMain() {
     const leftMain = document.createElement("div");
+    const greeting = document.createElement("div");
+    greeting.classList.add("greeting-container");
     leftMain.classList.add("left-main");
-    const greeting = document.createElement("h2");
-    greeting.classList.add("greeting");
-    greeting.textContent = "DU MA, HOW ARE YOU";
+
+    const greetTitle = document.createElement("h2");
+    greetTitle.classList.add("greet-title");
+    greetTitle.textContent = "Ối trời ơi";
+
+    const greetContent = document.createElement("p");
+    greetContent.classList.add("greet-content");
+    greetContent.textContent = "Du Ma is a Vietnamese restaurant located in the middle of nowhere";
+
+    greeting.appendChild(greetTitle);
+    greeting.appendChild(greetContent);
+
     leftMain.appendChild(greeting);
+    leftMain.appendChild(createTopLogo());
     return leftMain;
+}
+
+function createTopLogo() {
+    const frontLogo = document.createElement("div");
+    frontLogo.classList.add("front-logo");
+
+    const topLogo = document.createElement("p");
+    const bottomLogo = document.createElement("p");
+    topLogo.classList.add("top-logo");
+    bottomLogo.classList.add("bottom-logo");
+    topLogo.textContent = "D U M A";
+    bottomLogo.textContent = "RESTAURANT";
+
+    frontLogo.appendChild(topLogo);
+    frontLogo.appendChild(bottomLogo);
+    return frontLogo;
 }
 
 function rightMain() {
