@@ -85,6 +85,7 @@ a {
     left: 35%;
     width: 15%;
     font-family: var(--secondary-ft);
+    text-transform: uppercase;
 }
 
 .top-logo {

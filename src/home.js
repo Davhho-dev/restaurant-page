@@ -12,7 +12,7 @@ function navBar() {
 function logo() {
     const logo = document.createElement("h1");
     logo.classList.add("logo");
-    logo.textContent = "DU MA";
+    logo.textContent = "Đụ má";
     return logo;
 }
 
@@ -43,7 +43,7 @@ function leftMain() {
 
     const greetContent = document.createElement("p");
     greetContent.classList.add("greet-content");
-    greetContent.textContent = "Du Ma is a Vietnamese restaurant located in the middle of nowhere";
+    greetContent.textContent = "Đụ Má is a Vietnamese restaurant located in the middle of nowhere";
 
     greeting.appendChild(greetTitle);
     greeting.appendChild(greetContent);
@@ -61,7 +61,7 @@ function createTopLogo() {
     const bottomLogo = document.createElement("p");
     topLogo.classList.add("top-logo");
     bottomLogo.classList.add("bottom-logo");
-    topLogo.textContent = "D U M A";
+    topLogo.textContent = "Đ ụ m á";
     bottomLogo.textContent = "RESTAURANT";
 
     frontLogo.appendChild(topLogo);
