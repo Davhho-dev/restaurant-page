@@ -1,6 +1,6 @@
 export default function createMenu() {
     const menu = document.createElement("div");
-    menu.classList.add("menu-list");
+    menu.classList.add("menu");
 
     //Add food category
     menu.appendChild(createStarter());
