@@ -16,6 +16,7 @@ body, html {
     --medium-sz: 2.5rem;
     --small-sz: 2rem;
     --smallest-sz: 1.5rem;
+    --menu-desc: 1rem;
 }
 
 #content {
@@ -100,11 +101,13 @@ a {
 }
 
 /* ---------- MENU ----------*/
-.menu-list {
+.menu {
     height: 100%;
+    margin: 0 5%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    background-color: rgba(0, 0, 0, 0.044);
 }
 
 .category:nth-child(2) {
@@ -112,11 +115,15 @@ a {
 }
 
 .category {
+    padding: 5% 25%;
+    height: 100%;
     font-family: var(--primary-ft);
     font-size: var(--big-sz);
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
+    align-self: center;
+    gap: 25px;
 }
 
 .food {
@@ -132,4 +139,5 @@ a {
 .description {
     text-transform: capitalize;
     font-style: italic;
+    font-size: var(--menu-desc);
 }
