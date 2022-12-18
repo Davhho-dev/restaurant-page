@@ -1,6 +1,7 @@
 import { navBar } from "./home";
 import { mainContent } from "./home";
 import menu from "./menu";
+import about from "./about";
 import "./style.css";
 
 const content = document.getElementById("content");
@@ -20,6 +21,11 @@ links.forEach((link) => {
         else if(e.target.textContent === "menu") {
             content.removeChild(content.childNodes[1]);
             content.appendChild(menu());
+        }else if(e.target.textContent === "about") {
+            content.removeChild(content.childNodes[1]);
+            content.appendChild(about());
         }
     })
 })
+
+
