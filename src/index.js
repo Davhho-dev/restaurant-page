@@ -9,7 +9,8 @@ const content = document.getElementById("content");
 // content.appendChild(menu());
 
 content.appendChild(navBar());
-content.appendChild(mainContent());
+content.appendChild(about());
+// content.appendChild(mainContent());
 
 const links = document.querySelectorAll("a");
 links.forEach((link) => {
@@ -27,5 +28,3 @@ links.forEach((link) => {
         }
     })
 })
-
-

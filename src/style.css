@@ -5,7 +5,7 @@
 }
 
 body, html {
-    height: 100vh;
+    height: 100%;
 }
 
 :root {
@@ -42,6 +42,7 @@ body, html {
 a {
     font-family: var(--secondary-ft);
     font-size: var(--small-sz);
+    cursor: pointer;
 }
 
 /* ---------- Content ----------*/
@@ -143,3 +144,99 @@ a {
 }
 
 /* ---------- ABOUT ----------*/
+.about {
+    height: 100%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.about-header {
+    text-transform: capitalize;
+    font-family: var(--primary-ft);
+    font-size: var(--big-sz);
+    font-weight: bolder;
+    color: var(--primary-clr);
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.definition {
+    font-family: var(--secondary-ft);
+    font-size: var(--small-sz);
+}
+
+.about-content {
+    font-family: var(--secondary-ft);
+    font-size: var(--smallest-sz);
+    padding-left: 2%;
+}
+
+.about-body {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-left {
+    height: 125vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 250px;
+}
+
+.about-image {
+    width: 50%;
+    height: 40%;
+    background-image: url(./soytiet.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.about-right {
+    height: 125vh;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.chef-title {
+    font-family: var(--primary-ft);
+    font-size: var(--medium-sz);
+    color: var(--primary-clr);
+}
+
+.chef-biography {
+    width: max(75ch);
+    font-family: var(--secondary-ft);
+    font-size: var(--smallest-sz);
+}
+
+.img {
+    width: 50%;
+    height: 45%;
+    background-image: url(./Times.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.time-section {
+    font-family: var(--primary-ft);
+    font-size: var(--medium-sz);
+    color: var(--primary-clr);
+    margin-top: 17%;
+}
+
+.interview {
+    font-family: var(--secondary-ft);
+    font-size: var(--smallest-sz);
+    font-style: italic;
+    margin-left: 90%;
+}
