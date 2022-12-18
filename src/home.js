@@ -18,7 +18,7 @@ function logo() {
 
 function navElement(text) {
     const link = document.createElement("a");
-    link.classList.add(text);
+    link.classList.add("nav-tabs");
     link.textContent = text;
     return link;
 }
