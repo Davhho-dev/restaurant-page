@@ -39,10 +39,16 @@ body, html {
     font-size: var(--big-sz);
 }
 
-a {
+li {
+    list-style-type: none;
     font-family: var(--secondary-ft);
     font-size: var(--small-sz);
     cursor: pointer;
+    transition: color .35s ease;
+}
+
+li:hover {
+    color: var(--primary-clr);
 }
 
 /* ---------- Content ----------*/

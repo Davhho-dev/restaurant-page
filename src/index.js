@@ -5,14 +5,10 @@ import about from "./about";
 import "./style.css";
 
 const content = document.getElementById("content");
-// content.appendChild(navBar());
-// content.appendChild(menu());
-
 content.appendChild(navBar());
-content.appendChild(about());
-// content.appendChild(mainContent());
+content.appendChild(mainContent());
 
-const links = document.querySelectorAll("a");
+const links = document.querySelectorAll("li");
 links.forEach((link) => {
     link.addEventListener("click", (e) => {
         if(e.target.textContent === "home") {
