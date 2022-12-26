@@ -246,3 +246,32 @@ li:hover {
     font-style: italic;
     margin-left: 90%;
 }
+
+/* ---------- CONTACT ----------*/
+.contact {
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-header {
+    font-family: var(--primary-ft);
+    font-size: var(--medium-sz);
+    color: var(--primary-clr);
+    text-transform: uppercase;
+}
+
+.contact-content {
+    font-family: var(--secondary-ft);
+    font-size: var(--smallest-sz);
+}
+
+.address,
+.reservation,
+.hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}

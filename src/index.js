@@ -2,11 +2,11 @@ import { navBar } from "./home";
 import { mainContent } from "./home";
 import menu from "./menu";
 import about from "./about";
-import "./style.css";
+import contact from "./contact";
 
 const content = document.getElementById("content");
 content.appendChild(navBar());
-content.appendChild(mainContent());
+content.appendChild(contact());
 
 const links = document.querySelectorAll("li");
 links.forEach((link) => {
@@ -21,6 +21,9 @@ links.forEach((link) => {
         }else if(e.target.textContent === "about") {
             content.removeChild(content.childNodes[1]);
             content.appendChild(about());
+        }else {
+            content.removeChild(content.childNodes[1]);
+            content.appendChild(contact());
         }
     })
 })
