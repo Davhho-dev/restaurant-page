@@ -6,7 +6,7 @@ import contact from "./contact";
 
 const content = document.getElementById("content");
 content.appendChild(navBar());
-content.appendChild(contact());
+content.appendChild(mainContent());
 
 const links = document.querySelectorAll("li");
 links.forEach((link) => {
